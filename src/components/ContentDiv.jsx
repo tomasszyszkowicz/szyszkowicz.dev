@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/contentDiv.css";
 import "../css/headerButton.css";
 
-const ContentDiv = () => {
+const ContentDiv = ({ handleClick }) => {
+    const [isMoved, setIsMoved] = useState(false);
+
+    const handleMove = () => {
+        setIsMoved(!isMoved);
+        handleClick(1);
+    };
+
     return (
-        <div className="content-div">
+        <div className={`content-div ${isMoved ? 'moved' : ''}`}>
             <div className="content-line">
                 <p style={{ marginLeft: '100px' }}>Full-stack web developer</p>
                 <div className="vertical-line"></div>
@@ -12,7 +19,7 @@ const ContentDiv = () => {
                     Tomáš<br />Szyszkowicz
                 </h1>
             </div>
-            <div className="header-button">Click to see more</div>
+            <div className="header-button" onClick={handleMove}>Click to see more</div>
         </div>
     );
 };

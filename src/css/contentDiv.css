@@ -15,6 +15,11 @@
   align-items: center;
 }
 
+.moved {
+  transform: translateX(-200%); /* Move the div outside the viewport */
+  transition: transform 1.5s ease; /* Add transition for smooth movement */
+}
+
 .content-line {
   display: flex;
   align-items: center;
@@ -41,3 +46,35 @@
     font-size: 32px;
   }
 }
+
+@media (max-width: 800px) {
+  .name {
+    font-size: 24px;
+  }
+}
+
+.about-me-div {
+  transform: translateY(100vh);
+  position: relative;
+  top: 120px;
+  width: 50%;
+  height: 70%;
+  padding: 20px;
+  padding-top: 10%;
+  padding-bottom: 100px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: black;
+  margin: 20px auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.visible {
+  transform: translateY(calc(120px - 100vh)); /* Move the div to the top by 120px */
+  transition: transform 1.5s ease; /* Only transition the transform property */
+}
+
+
+

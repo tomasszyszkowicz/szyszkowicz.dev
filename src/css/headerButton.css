@@ -1,0 +1,29 @@
+.header-button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 12px; /* Combine padding-top, padding-right, padding-left, padding-bottom */
+  text-align: center;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-size: 16px;
+  margin: 20px;
+  margin-top: 42px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 5px;
+}
+
+.header-button:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 1250px) {
+  .header-button {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}

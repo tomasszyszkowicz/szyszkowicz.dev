@@ -1,0 +1,27 @@
+.header-header {
+  background-color: black;
+  font-size: 30px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1250px) {
+  .header-header {
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+}
+
+.header-header:hover {
+  background-color: white;
+  color: black;
+}

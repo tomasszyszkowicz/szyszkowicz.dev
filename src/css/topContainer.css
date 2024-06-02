@@ -1,0 +1,20 @@
+.top-container {
+  height: 120px;
+  width: 100%;
+  padding: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 1250px) {
+  .top-container {
+    flex-direction: column;
+    height: auto; /* Adjust height to fit content */
+    justify-content: center;
+    align-items: center;
+  }
+}

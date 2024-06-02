@@ -1,20 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../css/contentDiv.css";
 import "../css/headerButton.css";
 
 const AboutMeDiv = ({ isVisible }) => {
-    const [isVisibleState, setIsVisibleState] = useState(false);
+    const [isMoved, setIsMoved] = useState(true);
 
-    const handleMove = () => {
-        setIsVisibleState(!isVisible);
-    };
+    React.useEffect(() => {
+        if (!isVisible) {
+            setIsMoved(true);
+        } else {
+            setIsMoved(false);
+        }
+    }, [isVisible]);
 
     return (
-        <div className={`about-me-div ${isVisible ? 'visible' : ''}`}>
-            <div className="content-line">
-                <h1>About me</h1>
-            </div>
-            <div className="header-button" onClick={handleMove}>Click to see more</div>
+        <div className={`content-div-secondary ${isMoved ? 'moved2' : ''}`}>
+            <h1>About me</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos assumenda neque recusandae nesciunt animi numquam laboriosam possimus laudantium quia ullam voluptate unde aperiam odit est vitae, dolorum quisquam fugit!</p>
         </div>
     );
 };

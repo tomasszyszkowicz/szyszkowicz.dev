@@ -17,9 +17,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <TopContainer>
+      <TopContainer handleClick={handleClick}>
       </TopContainer>
-      <Content handleClick={handleClick}>
+      <Content handleClick={handleClick} isVisible={activeIndex === 0}>
       </Content>
       <AboutMeDiv isVisible={activeIndex === 1}>
       </AboutMeDiv>

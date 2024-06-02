@@ -5,16 +5,16 @@ import HeaderButton from "./HeaderButton";
 import HeaderHeader from "./HeaderHeader";
 import Logo from "./Logo";
 
-const TopContainer = ({ }) => {
+const TopContainer = ({ handleClick }) => {
     return (
         <div className="top-container">
             <TopContainerChild>
-                <HeaderHeader />
+                <HeaderHeader handleClick={() => handleClick(0)}/>
             </TopContainerChild>
             <TopContainerChild>
-                <HeaderButton text="About me" />
-                <HeaderButton text="Projects" />
-                <HeaderButton text="Hobbies" />
+                <HeaderButton text="About me" handleClick={() => handleClick(1)}/>
+                <HeaderButton text="Projects" handleClick={() => handleClick(2)}/>
+                <HeaderButton text="Hobbies" handleClick={() => handleClick(3)}/>
             </TopContainerChild>
             <TopContainerChild>
                 <Logo

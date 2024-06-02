@@ -2,13 +2,20 @@ import React, { useState } from "react";
 import "../css/contentDiv.css";
 import "../css/headerButton.css";
 
-const ContentDiv = ({ handleClick }) => {
+const ContentDiv = ({ handleClick, isVisible}) => {
     const [isMoved, setIsMoved] = useState(false);
 
     const handleMove = () => {
-        setIsMoved(!isMoved);
         handleClick(1);
     };
+
+    React.useEffect(() => {
+        if (!isVisible) {
+            setIsMoved(true);
+        } else {
+            setIsMoved(false);
+        }
+    }, [isVisible]);
 
     return (
         <div className={`content-div ${isMoved ? 'moved' : ''}`}>

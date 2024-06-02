@@ -1,9 +1,9 @@
 import React from "react";
 import "../css/headerHeader.css";
 
-const HeaderButton = ({ }) => {
+const HeaderButton = ({ handleClick }) => {
     return (
-        <div className="header-header">
+        <div className="header-header" onClick={handleClick}>
             <b><span>Tomáš Szyszkowicz</span></b>
         </div>
     );

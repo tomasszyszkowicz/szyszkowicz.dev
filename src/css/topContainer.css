@@ -8,6 +8,7 @@
   background-color: black;
   display: flex;
   flex-direction: row;
+  border-bottom: solid 1px white;
 }
 
 @media (max-width: 1250px) {

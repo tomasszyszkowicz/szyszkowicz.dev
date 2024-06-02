@@ -20,13 +20,14 @@ const ContentDiv = ({ handleClick, isVisible}) => {
     return (
         <div className={`content-div ${isMoved ? 'moved' : ''}`}>
             <div className="content-line">
-                <p style={{ marginLeft: '100px' }}>Full-stack web developer</p>
+                <p>Full-stack web developer</p>
                 <div className="vertical-line"></div>
                 <h1 className="name">
                     Tomáš<br />Szyszkowicz
                 </h1>
             </div>
-            <div className="header-button" onClick={handleMove}>Click to see more</div>
+            <div className="header-button" onClick={handleMove} style={{ border: '1px solid white' }}>Click to see more</div>
+
         </div>
     );
 };

@@ -16,7 +16,11 @@
   justify-content: center;
   align-items: center;
   transition: transform 1.5s ease;
-  overflow: hidden;
+  overflow: auto;
+}
+
+.content-div p {
+  margin-left: 100px;
 }
 
 .content-div-secondary {
@@ -33,7 +37,7 @@
   background-color: black;
   margin: 20px auto;
   transition: transform 1.5s ease;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .moved {
@@ -81,55 +85,24 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1250px) {
+  .content-div {
+    top: 350px;
+    width: 100%;
+  }
+  .content-div p {
+    margin-left: 0;
+    font-size: 13px;
+  }
+  .content-div-secondary {
+    top: 350px;
+    width: 90%;
+  }
   .name {
     font-size: 24px;
   }
 }
 
-.about-me-div {
-  position: fixed;
-  top: 100%; /* Initially, move the div off-screen */
-  left: 50%; /* Initially, move the div to the top by 120px */
-  transform: translate(-50%, 0); /* Move the div to the top of the viewport */
-  width: 50%;
-  height: 70%;
-  padding: 20px;
-  padding-top: 5px;
-  padding-bottom: 100px;
-  font-family: "Courier New", Courier, monospace;
-  background-color: black;
-  margin: 20px auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.visible {
-  top: 120px; /* Final position of the div */
-  transform: translate(-50%, 0); /* Move the div to the top of the viewport */
-  transition: top 1.5s ease, transform 1.5s ease; /* Transition both top and transform properties */
-}
-
-.projects-div {
-  position: fixed;
-  top: 100%; /* Initially, move the div off-screen */
-  left: 50%; /* Initially, move the div to the top by 120px */
-  transform: translate(-50%, 0); /* Move the div to the top of the viewport */
-  width: 50%;
-  height: 70%;
-  padding: 20px;
-  padding-top: 5px;
-  padding-bottom: 100px;
-  font-family: "Courier New", Courier, monospace;
-  background-color: black;
-  margin: 20px auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
 
 
 

@@ -5,8 +5,7 @@ import InnerContentDiv from "./InnerContentDiv";
 
 const HobbiesDiv = ({ isVisible }) => {
     const [isMoved, setIsMoved] = useState(true);
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [indexChange, setIndexChange] = useState('');
+    const [indexes, setIndexes] = useState([0, 1, 2]);
 
     useEffect(() => {
         if (!isVisible) {
@@ -16,41 +15,55 @@ const HobbiesDiv = ({ isVisible }) => {
         }
     }, [isVisible]);
 
-    const changeIndex = (delta) => {
-        const newIndex = currentIndex + delta;
-        if (newIndex > 2) {
-            setCurrentIndex(0);
-            return;
-        } else if (newIndex < 0) {
-            setCurrentIndex(2);
-            return;
+    const move = (direction) => {
+        if (direction === 'right') {
+            setIndexes((prevIndexes) => {
+                const [first, ...rest] = prevIndexes;
+                return [...rest, first];
+            });
+        } else if (direction === 'left') {
+            setIndexes((prevIndexes) => {
+                const last = prevIndexes[prevIndexes.length - 1];
+                return [last, ...prevIndexes.slice(0, -1)];
+            });
         }
-        setCurrentIndex(newIndex);
-        setIndexChange(delta > 0 ? 'increased' : 'decreased'); // Set index change direction
-    }
+    };
 
     useEffect(() => {
-        console.log(currentIndex);
-    } , [currentIndex]);
+        console.log(indexes);
+    } , [indexes]);
 
     return (
         <div className={`content-div-secondary ${isMoved ? 'moved4' : ''}`}>
             <h1>Hobbies</h1>
-            <button onClick={() => changeIndex(1)}>Index +</button>
-            <button onClick={() => changeIndex(-1)}>Index -</button>
-            <InnerContentDiv visibilityAndIndexChange={{isVisible: currentIndex === 0, indexChange: indexChange}}>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore earum suscipit, delectus soluta ut ipsa impedit cumque possimus sunt corrupti, aliquam nemo dolorum sapiente esse dolores autem totam, eius ullam!</p>
+            <button onClick={() => move('left')}>Index +</button>
+            <button onClick={() => move('right')}>Index -</button>
+            <InnerContentDiv index={indexes[0]}>
+                <p>tomasektomasektomasektomasektomasektomasek
+                tomasektomasektomasektomasektomasektomasek
+                tomasektomasektomasektomasektomasektomasek
+                tomasektomasektomasektomasektomasektomasek
+                </p>
             </InnerContentDiv>
-            <InnerContentDiv visibilityAndIndexChange={{isVisible: currentIndex === 1, indexChange: indexChange}}>
-                <p>hi</p>
+            <InnerContentDiv index={indexes[1]}>
+                <p>chujovychujchujovychujchujovychuj faf fafafda
+                     fadfa dafdasfugyagufd hgfaghuf
+                     dahgf guydg gdg dhgadg ghda'
+                     udyafg yugdauygdfadasuyg 
+                </p>
             </InnerContentDiv>
-            <InnerContentDiv visibilityAndIndexChange={{isVisible: currentIndex === 2, indexChange: indexChange}}>
-                <p>hi kokot</p>
+            <InnerContentDiv index={indexes[2]}>
+                <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                    xxxxxxxxxxxxxxxxxxxxxxxxxx
+                </p>
             </InnerContentDiv>
-            
         </div>
     );
 };
 
 export default HobbiesDiv;
+
+
 

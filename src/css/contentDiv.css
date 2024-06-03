@@ -35,7 +35,7 @@
   padding-top: 5%;
   padding-bottom: 100px;
   font-family: "Courier New", Courier, monospace;
-  background-color: black;
+  background-color: red;
   margin: 20px auto;
   transition: transform 1.5s ease;
   overflow: hidden;
@@ -69,11 +69,6 @@
 .moved4 {
   transform: translateY(-100%); /* Move the div outside the viewport to the top */
   transition: transform 1s ease; /* Add transition for smooth movement */
-}
-
-.ready {
-  transform: translateX(150%); /* Move the div outside the viewport to the right */
-  transition: transform 0s ease; /* Add transition for smooth movement */
 }
 
 .content-line {
@@ -137,30 +132,33 @@
   align-items: center;
   text-align: center;
   margin: 0 auto;
+  left: 0;
+  right: 0;
   width: 80%;
   height: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: black;
-  transition: transform 1s ease;
+  background-color: orange;
+  transition: transform 1s linear;
 }
 
 .translate-left {
-  transform: translateX(-170%);
+  transform: translateX(-115%);
 }
 
 .translate-right {
-  transform: translateX(170%);
+  transform: translateX(115%);
 }
 
 .translate-left-ready {
-  transform: translateX(-170%);
-  transition: transform 0s ease;
+  transform: translateX(-115%);
 }
 
 .translate-right-ready {
-  transform: translateX(170%);
-  transition: transform 0s ease;
+  transform: translateX(115%);
+}
+
+.inner-content-div.translate-left-ready,
+.inner-content-div.translate-right-ready {
+  transition: transform 0s linear;
 }
 
 

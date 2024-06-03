@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../css/contentDiv.css";
 
-const InnerContentDiv = ({ children, index}) => {
+const InnerContentDiv = ({ children, index }) => {
     const [movementClass, setMovementClass] = useState('translate-left');
     const [lastIndex, setLastIndex] = useState(index);
 

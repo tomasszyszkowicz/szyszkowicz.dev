@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../css/contentDiv.css";
 import "../css/headerButton.css";
 
-const ProjectsDiv = ({ isVisible }) => {
+const HobbiesDiv = ({ isVisible }) => {
     const [isMoved, setIsMoved] = useState(true);
 
     React.useEffect(() => {
@@ -14,11 +14,11 @@ const ProjectsDiv = ({ isVisible }) => {
     }, [isVisible]);
 
     return (
-        <div className={`content-div-secondary ${isMoved ? 'moved3' : ''}`}>
-            <h1>Projects</h1>
+        <div className={`content-div-secondary ${isMoved ? 'moved4' : ''}`}>
+            <h1>Hobbies</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio non similique, atque totam nam illo magnam consequatur! Sapiente, nisi sit saepe repudiandae facere sint numquam, voluptas, alias adipisci molestias ipsum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi in, laboriosam quae quo placeat accusamus quia voluptas officia laborum harum provident consequuntur ducimus obcaecati impedit facilis odio repudiandae, ratione accusantium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam illum veritatis doloremque quidem ipsa repellendus debitis, ducimus ab ea quisquam nesciunt voluptates! Necessitatibus, voluptas quam quod et consequuntur architecto iure. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos assumenda neque recusandae nesciunt animi numquam laboriosam possimus laudantium quia ullam voloremluptate unde aperiam odit est vitae, dolorum quisquam fugit!</p>
         </div>
     );
 };
 
-export default ProjectsDiv;
+export default HobbiesDiv;

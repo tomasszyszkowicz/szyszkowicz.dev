@@ -29,7 +29,7 @@
   left: 0;
   right: 0;
   width: 50%;
-  height: 70%;
+  height: 50%;
   padding: 20px;
   padding-top: 5%;
   padding-bottom: 100px;
@@ -40,18 +40,36 @@
   overflow: auto;
 }
 
+.content-div-secondary p {
+  z-index: 10;
+}
+
+.content-div-secondary h1 {
+  z-index: 10;
+}
+
 .moved {
   transform: translateX(-200%); /* Move the div outside the viewport */
-  transition: transform 1.5s ease; /* Add transition for smooth movement */
+  transition: transform 1s ease; /* Add transition for smooth movement */
 }
 
 .moved2 {
-  transform: translateY(100%); /* Move the div outside the viewport */
-  transition: transform 1.5s ease; /* Add transition for smooth movement */
+  transform: translateY(150%); /* Move the div outside the viewport */
+  transition: transform 1s ease; /* Add transition for smooth movement */
+}
+
+.moved3 {
+  transform: translateX(200%); /* Move the div outside the viewport to the right */
+  transition: transform 1s ease; /* Add transition for smooth movement */
+}
+
+.moved4 {
+  transform: translateY(-100%); /* Move the div outside the viewport to the top */
+  transition: transform 1s ease; /* Add transition for smooth movement */
 }
 
 .ready {
-  transform: translateX(200%); /* Move the div outside the viewport to the right */
+  transform: translateX(150%); /* Move the div outside the viewport to the right */
   transition: transform 0s ease; /* Add transition for smooth movement */
 }
 

@@ -1,1 +1,1 @@
-Personal website
+https://szyszkowicz-dev.vercel.app/

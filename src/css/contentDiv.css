@@ -38,6 +38,7 @@
   background-color: black;
   margin: 20px auto;
   transition: transform 1.5s ease;
+  overflow: hidden;
   
 }
 
@@ -126,6 +127,40 @@
   .name {
     font-size: 24px;
   }
+}
+
+.inner-content-div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  height: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  transition: transform 1s ease;
+}
+
+.translate-left {
+  transform: translateX(-170%);
+}
+
+.translate-right {
+  transform: translateX(170%);
+}
+
+.translate-left-ready {
+  transform: translateX(-170%);
+  transition: transform 0s ease;
+}
+
+.translate-right-ready {
+  transform: translateX(170%);
+  transition: transform 0s ease;
 }
 
 

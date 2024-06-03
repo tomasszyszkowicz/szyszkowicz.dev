@@ -3,7 +3,7 @@ import "../css/contactContainer.css";
 
 const ContactContainer = ({}) => {
     return (
-        <div class="contact-container">
+        <div className="contact-container">
             <p>email: tomasszyszkowicz@email.cz<br></br>
             phone: +420606633440</p>
         </div>

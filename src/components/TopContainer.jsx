@@ -4,6 +4,7 @@ import TopContainerChild from "./TopContainerChild";
 import HeaderButton from "./HeaderButton";
 import HeaderHeader from "./HeaderHeader";
 import Logo from "./Logo";
+import ContactContainer from "./ContactContainer";
 
 const TopContainer = ({ handleClick }) => {
     return (
@@ -25,6 +26,7 @@ const TopContainer = ({ handleClick }) => {
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"
                     link="https://www.linkedin.com/in/tom%C3%A1%C5%A1-szyszkowicz-50b7a7243/"
                 ></Logo>
+                <ContactContainer></ContactContainer>
             </TopContainerChild>
         </div>
     );

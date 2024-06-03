@@ -1,25 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../css/contentDiv.css";
 
-const InnerContentDiv = ({ children, isVisible }) => {
-    const [isMovedLeft, setIsMovedLeft] = useState(false);
-    const [isMovedRight, setIsMovedRight] = useState(false);
+const InnerContentDiv = ({ children, visibilityAndIndexChange }) => {
+    const [movementClass, setMovementClass] = useState('translate-left');
 
-
-    React.useEffect(() => {
-        if (!isVisible) {
-            setIsMovedLeft(true);
-        } else {
-            setIsMovedLeft(false);
+    useEffect(() => {
+        if (visibilityAndIndexChange.isVisible && visibilityAndIndexChange.indexChange === 'increased') {
+            setMovementClass('translate-left-ready');
+            setMovementClass('');
+        } else if (visibilityAndIndexChange.isVisible && visibilityAndIndexChange.indexChange === 'decreased') {
+            setMovementClass('translate-right-ready');
+            setMovementClass('');
+        } else if (!visibilityAndIndexChange.isVisible && visibilityAndIndexChange.indexChange === 'increased') {
+            setMovementClass('translate-left');
+        } else if (!visibilityAndIndexChange.isVisible && visibilityAndIndexChange.indexChange === 'decreased') {
+            setMovementClass('translate-right');
         }
-    }, [isVisible]);
+    }, [visibilityAndIndexChange]);
 
     return (
-        <div className={`inner-content-div ${isMovedLeft ? 'translate-left' : ''}`}>
+        <div className={`inner-content-div ${movementClass}`}>
             {children}
         </div>
-        
     );
 };
 
 export default InnerContentDiv;
+

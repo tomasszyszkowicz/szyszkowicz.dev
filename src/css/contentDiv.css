@@ -109,14 +109,14 @@
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  padding: 20px;
+  padding: 15px;
   left: 0;
   right: 0;
   width: 90%;
   height: 30%;
   background-color: black;
   transition: transform 1s linear;
-  border: solid 1px white;
+  border: solid 2px white;
   z-index: 1;
 }
 

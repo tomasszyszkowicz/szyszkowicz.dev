@@ -67,7 +67,7 @@
 }
 
 .moved4 {
-  transform: translateY(-100%); /* Move the div outside the viewport to the top */
+  transform: translateY(-150%); /* Move the div outside the viewport to the top */
   transition: transform 1s ease; /* Add transition for smooth movement */
 }
 
@@ -103,25 +103,23 @@
 
 .inner-content-div {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   margin: 0 auto;
   padding: 15px;
   left: 0;
   right: 0;
   width: 90%;
-  height: 30%;
+  height: 50%;
   background-color: black;
   transition: transform 1s linear;
-  border: solid 2px white;
   z-index: 1;
 }
 
-.inner-content-div h2 {
+.left-align {
   text-align: left;
+}
+
+.right-align {
+  text-align: right;
 }
 
 .translate-left {
@@ -147,7 +145,7 @@
 
 .navigation-div {
   position: relative;
-  top: 55%;
+  top: 70%;
   left: 0;
   right: 0;
   height: 120px;
@@ -185,6 +183,13 @@
   }
 }
 
+.right-float {
+  float: right;
+}
+
+.left-float {
+  float: left;
+}
 
 
 

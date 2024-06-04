@@ -185,6 +185,13 @@
   }
 }
 
+@media (max-width: 1700px) {
+  .inner-content-div {
+    font-size: 14px;
+  }
+}
+  
+
 .right-float {
   float: right;
 }

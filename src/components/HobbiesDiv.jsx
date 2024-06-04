@@ -38,7 +38,7 @@ const HobbiesDiv = ({ isVisible }) => {
         <div className={`content-div-secondary ${isMoved ? 'moved4' : ''}`}>
             <h1>Hobbies</h1>
             <InnerContentDiv index={indexes[0]}>
-                <h2>Speedcubing</h2>
+                <h2 className="left-align">Speedcubing</h2>
                 <ContentImage src="speedcubing.jpg" imgClass="right-image"/>
                 <p className="left-align">
                     I'm a speedcuber since 2016. Since then I've been to many competitions. Lorem ipsum dolor sit amet gff dgdf fdg dgd gfd gdfsectetur adipisicing elit. Quae excepturi aspernatur obcaecati hic cumque voluptates atque et consequatur dict Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quis quo animi autem consectetur neque consequuntur veniam aliquam tempora quibusdam impedit, ea eaque beatae dolorem, molestias nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas provident temporibus cupiditate autem obcaecati deserunt suscipit voluptate neque repellat labore, laudantium dignissimos eius veritatis fugit corporis error, harum amet incidunt. , dolores repellendus?a repudiandae ipsum, aperiam possimus provident, accusamus ad. Iste enim ratione ea. hm hm hm hm hm
@@ -52,7 +52,7 @@ const HobbiesDiv = ({ isVisible }) => {
                 </p>
             </InnerContentDiv>
             <InnerContentDiv index={indexes[2]}>
-                <h2>Speedtyping</h2>
+                <h2 className="left-align">Speedtyping</h2>
                 <p>
                     I'm also a speedtyper. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quisquam repudiandae dolores consequuntur fugiat alias, quia rerum deserunt nemo laborum modi dolor minus voluptates vitae sed in illo veritatis. Molestias! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa distinctio impedit consectetur dignissimos ad quam exercitationem iste ullam quos amet in, placeat harum accusantium mollitia, ut ducimus ex. Veritatis, qui? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla aut aperiam quas sint neque consequuntur debitis sapiente consectetur? Tempora laudantium facere alias architecto asperiores ea quisqu Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam perferendis, accusamus facere, culpa commodi distinctio libero voluptates perspiciatis et amet est id dicta consequuntur asperiores ex explicabo unde nostrum aspernatur!am hic voluptates iure ut!I can type around 100 words per minute. I like to is ipsam tenetur?
                 </p>

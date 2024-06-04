@@ -146,7 +146,7 @@
 
 .navigation-div {
   position: relative;
-  top: 55%;
+  top: 50%;
   left: 0;
   right: 0;
   height: 120px;
@@ -183,11 +183,35 @@
   .inner-content-div {
     height: 30%;
   }
+  .left-align {
+    text-align: right;
+  }
+  .navigation-div {
+    top: 60%;
+  }
 }
 
 @media (max-width: 1700px) {
   .inner-content-div {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .inner-content-div {
+    font-size: 12px;
+  }
+  .navigation-div {
+    top: 85%;
+  }
+  .left-align {
+    text-align: right;
+  }
+}
+
+@media (max-width: 600px) {
+  .inner-content-div {
+    font-size: 10px;
   }
 }
   

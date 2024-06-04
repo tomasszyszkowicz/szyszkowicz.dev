@@ -14,8 +14,9 @@
 
 @media (max-width: 1250px) {
     .contact-container {
-        margin-top: -25px;
+        margin-top: -10px;
         padding-top: 0px;
         font-size: 11px;
+        padding-bottom: 0px;
     }
   }

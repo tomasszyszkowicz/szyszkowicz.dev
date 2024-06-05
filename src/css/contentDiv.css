@@ -100,7 +100,12 @@
     font-size: 32px;
   }
 }
-
+.inner-content-div-wrapper {
+  background-color: orange;
+  padding: 0px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 .inner-content-div {
   position: absolute;
   margin: 0 auto;
@@ -139,8 +144,29 @@
   transform: translateX(110%);
 }
 
+.translate-top {
+  transform: translateY(-110%);
+}
+
+.translate-bottom {
+  transform: translateY(110%);
+}
+
+.translate-top-ready {
+  transform: translateY(-110%);
+}
+
+.translate-bottom-ready {
+  transform: translateY(110%);
+}
+
 .inner-content-div.translate-left-ready,
 .inner-content-div.translate-right-ready {
+  transition: transform 0s linear;
+}
+
+.inner-content-div.translate-top-ready,
+.inner-content-div.translate-bottom-ready {
   transition: transform 0s linear;
 }
 

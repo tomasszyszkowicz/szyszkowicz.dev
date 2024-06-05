@@ -3,6 +3,7 @@ import "../css/contentDiv.css";
 import "../css/headerButton.css";
 import InnerContentDiv from "./InnerContentDiv";
 import ContentImage from "./ContentImage";
+import NavigationDiv from "./NavigationDiv";
 
 const HobbiesDiv = ({ isVisible }) => {
     const [isMoved, setIsMoved] = useState(true);
@@ -57,10 +58,10 @@ const HobbiesDiv = ({ isVisible }) => {
                     I'm also a speedtyper. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quisquam repudiandae dolores consequuntur fugiat alias, quia rerum deserunt nemo laborum modi dolor minus voluptates vitae sed in illo veritatis. Molestias! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa distinctio impedit consectetur dignissimos ad quam exercitationem iste ullam quos amet in, placeat harum accusantium mollitia, ut ducimus ex. Veritatis, qui? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla aut aperiam quas sint neque consequuntur debitis sapiente consectetur? Tempora laudantium facere alias architecto asperiores ea quisqu Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam perferendis, accusamus facere, culpa commodi distinctio libero voluptates perspiciatis et amet est id dicta consequuntur asperiores ex explicabo unde nostrum aspernatur!am hic voluptates iure ut!I can type around 100 words per minute. I like to is ipsam tenetur?
                 </p>
             </InnerContentDiv>
-            <div className="navigation-div">
-                <button onClick={() => move('right')} className="header-button" style={{border: 'solid 1px white', margin: '10px'}}>⟨</button>
-                <button onClick={() => move('left')} className="header-button" style={{border: 'solid 1px white', margin: '10px'}}>⟩</button>
-            </div>
+            <NavigationDiv>
+                <button onClick={() => move('right')} className="header-button" style={{border: 'solid 1px white', margin: '10px'}}>◀</button>
+                <button onClick={() => move('left')} className="header-button" style={{border: 'solid 1px white', margin: '10px'}}>▶</button>
+            </NavigationDiv>
 
         </div>
     );

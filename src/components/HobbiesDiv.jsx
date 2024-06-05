@@ -38,6 +38,7 @@ const HobbiesDiv = ({ isVisible }) => {
     return (
         <div className={`content-div-secondary ${isMoved ? 'moved4' : ''}`}>
             <h1>Hobbies</h1>
+            <div className="inner-content-div-wrapper">
             <InnerContentDiv index={indexes[0]}>
                 <h2 className="left-align">Speedcubing</h2>
                 <ContentImage src="speedcubing.jpg" imgClass="right-image"/>
@@ -58,6 +59,7 @@ const HobbiesDiv = ({ isVisible }) => {
                     I'm also a speedtyper. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quisquam repudiandae dolores consequuntur fugiat alias, quia rerum deserunt nemo laborum modi dolor minus voluptates vitae sed in illo veritatis. Molestias! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa distinctio impedit consectetur dignissimos ad quam exercitationem iste ullam quos amet in, placeat harum accusantium mollitia, ut ducimus ex. Veritatis, qui? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla aut aperiam quas sint neque consequuntur debitis sapiente consectetur? Tempora laudantium facere alias architecto asperiores ea quisqu Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam perferendis, accusamus facere, culpa commodi distinctio libero voluptates perspiciatis et amet est id dicta consequuntur asperiores ex explicabo unde nostrum aspernatur!am hic voluptates iure ut!I can type around 100 words per minute. I like to is ipsam tenetur?
                 </p>
             </InnerContentDiv>
+            </div>
             <NavigationDiv>
                 <button onClick={() => move('right')} className="header-button" style={{border: 'solid 1px white', margin: '10px'}}>◀</button>
                 <button onClick={() => move('left')} className="header-button" style={{border: 'solid 1px white', margin: '10px'}}>▶</button>

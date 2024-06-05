@@ -112,7 +112,6 @@
   background-color: rgba(0,0,0,0);
   transition: transform 1s linear;
   z-index: 1;
-  font-size: 15px;
 }
 
 .inner-content-div-wrapper {

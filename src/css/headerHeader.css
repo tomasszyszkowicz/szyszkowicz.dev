@@ -1,5 +1,5 @@
 .header-header {
-  background-color: black;
+  background-color: #0d0d0d;
   font-size: 30px;
   color: white;
   padding: 15px 32px;
@@ -14,7 +14,7 @@
   border-radius: 5px;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1350px) {
   .header-header {
     font-size: 24px;
     margin-bottom: 0px;

@@ -1,5 +1,5 @@
 .header-button {
-  background-color: black;
+  background-color: #0d0d0d;
   border: none;
   color: white;
   padding: 15px 12px; /* Combine padding-top, padding-right, padding-left, padding-bottom */
@@ -20,7 +20,7 @@
   color: black;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1350px) {
   .header-button {
     margin-top: 0px;
     padding-top: 0px;

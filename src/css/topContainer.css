@@ -12,7 +12,7 @@
   z-index: 10;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1350px) {
   .top-container {
     flex-direction: column;
     height: auto; /* Adjust height to fit content */

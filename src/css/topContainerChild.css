@@ -10,7 +10,7 @@
     justify-content: center;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1350px) {
     .top-container-child {
         height: 100px;
     }

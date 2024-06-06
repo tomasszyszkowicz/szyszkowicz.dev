@@ -5,6 +5,7 @@ import HeaderButton from "./HeaderButton";
 import HeaderHeader from "./HeaderHeader";
 import Logo from "./Logo";
 import ContactContainer from "./ContactContainer";
+import LanguageContainer from "./LanguageContainer";
 
 const TopContainer = ({ handleClick }) => {
     return (

@@ -4,6 +4,7 @@ import Content from "./components/ContentDiv";
 import AboutMeDiv from "./components/AboutMeDiv";
 import ProjectsDiv from "./components/ProjectsDiv";
 import HobbiesDiv from "./components/HobbiesDiv";
+import BottomContainer from "./components/BottomContainer";
 
 const App = () => {
   const [activeIndex, setActiveIndex] = React.useState(0);
@@ -29,7 +30,8 @@ const App = () => {
       </ProjectsDiv>
       <HobbiesDiv isVisible={activeIndex === 3}>
       </HobbiesDiv>
-
+      <BottomContainer>
+      </BottomContainer>
     </div>
   );
 };

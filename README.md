@@ -1,1 +1,1 @@
-https://szyszkowicz-dev.vercel.app/
+https://www.szyszkowicz.dev/
